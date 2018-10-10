@@ -1,0 +1,84 @@
+
+INITIATE STATE 	= Loads a holding image with sound
+PAUSED STATE 	= Holding image remains but sound stops
+PLAYING STATE 	= Holding image remains and sound resumes
+QUERY SESSION   = Background lightens, Google responds and playback is resumed
+KILL SESSION    = Holding image is removed, playback is stopped and returned to home screen
+
+
+							"Ok Google" / "Hey Google"
+										|
+										|
+										|
+				- - - - - - - - > INITIATE STATE <  - - - - - - - - -
+				|											 		|			KILL SESSION
+				|					Start STATION    			 	|				Stop
+				|					Startup STATION 			 	|				Shut-up
+				|					Play STATION 				 	|				Please stop
+				|					Change to STATION 				|				Terminate
+				|					Switch to STATION 				|				Lay-off
+				|					Turn   to STATION				|
+				|					Start playing STATION        	|	
+				|					Switch to STATION    		 	|	
+				|					Will you play STATION  ?	 	|   
+				|					Could you find STATION ?	 	|			QUERY SESSION
+				|					Could you play STATION ?	 	|				What's playing?
+				|												 	|				What's on?
+				|												 	|				What am I listening on?
+				|												 	|				What are you playing?
+				|												 	|				What's currently on?
+				|												 	| 				What station is that?
+				V											     	|
+			PAUSED STATE < - - - - - - - - - - - - - - - - - - > PLAYING STATE
+				Pause												Play									
+				Freeze												Unmute
+				Halt												Continue
+				Mute
+
++ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
+Stuff we expect to see
++ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
+	Holding Image
+	Station Name
+	Play / Pause icon when we interact with the touch screen
+
++ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
+Negative test cases
++ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
+	Start again STATION
+	End STATION
+	Kill STATION
+	Initiate STATION
+	Run STATION
+	Transform to STATION
+	Continue STATION			(When playback was never initiated)
+	Change to STATION			(When playback was never initiated)
+	Adjust to STATION           (When on X and wanting to go to Y)
+	Shift  to STATION           (When on X and wanting to go to Y)
+	Play X and Y 				([BBC] Radio 2 + [BBC] Radio 3 becomes "[BBC] Radio 2 and [BBC] Radio 3")
+	Play XY 					([BBC] World Service + [BBC] Asian Network becomes "[BBC] World Network")
+	Take a break				(From a playing state it defies me!)
+	Play a random [BBC] station
+	What is that?				(If any STATION is playing)
+	Switch to STATION 			(Already ON that STATION, I was expecting it to alert me of the fact)
+	Is that the [BBC]?			(While a STATION is playing, starts to give me the weather)
+	Play BBC Radio 				(Defaults to 1 instead of prompting?)
+	Play a [BBC] station 		(Defaults to 1 instead of prompting?)
+	Play STATION
+
++ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
+Bugs
++ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
+	bbc scotland doesn't show holding image
+	radio wales doesn't show holding image
+	Saying "Play Cbeebies" opens Youtube app 
+	Saying "Play BBC Cbeebies" opens Youtube app
+	Saying "BBC Cbeebies Radio" is not understood
+	Radio 2 country does not work?
+	Saying "Play BBC Radio 10" gives me results from Youtube
+	Saying "Play BBC Scotland" gives me Radio One?
+
+
+Note
+Only radio stations...?
+Stop casting actually kills cast on chromecast
