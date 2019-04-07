@@ -21,10 +21,10 @@ Play / Pause icon when we interact with the touch screen
 
 
 
-			"Ok Google" / "Hey Google"
-				 |
-				 |
-				 |
+			      "Ok Google" / "Hey Google"
+				             |
+				             |
+				             |
 	- - - - - - - - > INITIATE STATE <  - - - - - - - - - - -
 	|                                                         |	KILL SESSION
 	|                  "Start STATION"                        |	"Stop"
