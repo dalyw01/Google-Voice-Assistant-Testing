@@ -10,24 +10,24 @@ STATION        = Any radio station that is supported on Google Home devices
 				 |
 				 |
 	- - - - - - - - > INITIATE STATE <  - - - - - - - - - - -
-	|							 |	KILL SESSION
-	|		Start STATION 				 |	Stop
-	|		Startup STATION 			 |	Shut-up
-	|		Play STATION 				 |	Please stop
-	|		Change to STATION 			 |	Terminate
-	|		Switch to STATION 			 |	Lay-off
-	|		Turn   to STATION			 |
-	|		Start playing STATION        		 |	
-	|		Switch to STATION    		 	 |	
-	|		Will you play STATION  ?	 	 |   
-	|		Could you find STATION ?	 	 |	QUERY SESSION
-	|		Could you play STATION ?		 |	What's playing?
-	|							 |	What's on?
-	|							 |	What am I listening on?
-	|							 |	What are you playing?
-	|							 |	What's currently on?
-	|							 | 	What station is that?
-	V							 |
+	|							 							|	KILL SESSION
+	|		Start STATION 				 					|	Stop
+	|		Startup STATION 			 					|	Shut-up
+	|		Play STATION 				 					|	Please stop
+	|		Change to STATION 			 					|	Terminate
+	|		Switch to STATION 			 					|	Lay-off
+	|		Turn   to STATION			 					|
+	|		Start playing STATION        		 			|	
+	|		Switch to STATION    		 	 				|	
+	|		Will you play STATION  ?	 	 				|   
+	|		Could you find STATION ?	 					|	QUERY SESSION
+	|		Could you play STATION ?		 				|	What's playing?
+	|							 							|	What's on?
+	|							 							|	What am I listening on?
+	|							 							|	What are you playing?
+	|							 							|	What's currently on?
+	|							 							| 	What station is that?
+	V							 							|
 	PAUSED STATE < - - - - - - - - - - - - - - - - - - - > PLAYING STATE
 	Pause							Play									
 	Freeze							Unmute
@@ -76,4 +76,3 @@ Bugs
 	Radio 2 country does not work?
 	Saying "Play BBC Radio 10" gives me results from Youtube
 	Saying "Play BBC Scotland" gives me Radio One?
-
