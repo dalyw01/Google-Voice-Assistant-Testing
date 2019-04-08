@@ -1,4 +1,3 @@
-@google_voice_testing
 Feature: Checking Google voice assistant technology works with smart display
 
   As a user
