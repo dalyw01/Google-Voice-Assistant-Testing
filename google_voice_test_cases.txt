@@ -1,3 +1,7 @@
+################################
+Google Voice Assistant Testing
+################################
+
 Feature: Checking Google voice assistant technology works with smart display
 
   As a user
