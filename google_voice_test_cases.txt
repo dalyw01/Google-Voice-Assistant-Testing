@@ -139,19 +139,20 @@ And the Google Home lights up awaiting commands
     | Play FAKE STATION NAME    | BBC Scottish Welsh                                      |
     | Take a break!             | From a current playing session it doesn't stop!         |
     | Play a random BBC station | Doesn't play any station?                               |
-    | What is that?	            | Won't show name of current playing station          |
+    | What is that?	            | Won't show name of current playing station              |
     | Play a BBC station.       | You have to specify a station.                          |
 
 
 
-+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 Bugs
-+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
-bbc scotland doesn't show holding image
-radio wales doesn't show holding image
-Saying "Play Cbeebies" opens Youtube app 
-Saying "Play BBC Cbeebies" opens Youtube app
-Saying "BBC Cbeebies Radio" is not understood
-Radio 2 country does not work?
-Saying "Play BBC Radio 10" gives me results from Youtube
-Saying "Play BBC Scotland" gives me Radio One?
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+  bbc scotland doesn't show holding image
+  radio wales doesn't show holding image
+  Saying "Play Cbeebies" opens Youtube app 
+  Saying "Play BBC Cbeebies" opens Youtube app
+  Saying "BBC Cbeebies Radio" is not understood
+  Radio 2 country does not work?
+  Saying "Play BBC Radio 10" gives me results from Youtube
+  Saying "Play BBC Scotland" gives me Radio One?
